@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manipulación del DOM</title>
+</head>
+<body>
+    <div id="container"></div>
+
+    <script>
+        // Crear el botón
+        const button = document.createElement('button');
+        button.id = 'btnCarrito';
+        button.innerHTML = 'Agregar al carrito';
+
+        // Función que se ejecutará al hacer clic en el botón
+        function handleClick() {
+            // Crear un nuevo elemento <h3>
+            const message = document.createElement('h3');
+            message.innerHTML = 'Agregado';
+
+            // Agregar el <h3> al DOM (suponiendo que hay un contenedor con id="container")
+            const container = document.getElementById('container');
+            container.appendChild(message);
+
+            // Cambiar el texto del botón
+            button.innerHTML = 'Agregado';
+        }
+
+        // Asociar el evento click con la función handleClick
+        button.addEventListener('click', handleClick);
+
+        // Agregar el botón al DOM (suponiendo que hay un contenedor con id="container")
+        const container = document.getElementById('container');
+        container.appendChild(button);
+    </script>
+</body>
+</html>

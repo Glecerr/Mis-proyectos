@@ -1,0 +1,76 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1d428a; /* Azul oscuro */
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #ffd700; /* Amarillo */
+    padding: 10px 0;
+    text-align: center;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    min-height: 80vh;
+}
+
+footer {
+    background-color: #ffd700; /* Amarillo */
+    text-align: center;
+    padding: 10px 0;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Estilos de producto */
+.producto {
+    display: flex;
+    margin: 20px;
+    padding: 20px;
+    background-color: #0c2340; /* Azul oscuro */
+    border-radius: 10px;
+    width: 300px;
+}
+
+.producto img {
+    width: 150px;
+    height: 150px;
+    margin-right: 20px;
+    border-radius: 5px;
+}
+
+.descripcion {
+    flex: 1;
+}
+
+.descripcion h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.descripcion p {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+button {
+    background-color: #ffd700; /* Amarillo */
+    color: #0c2340; /* Azul oscuro */
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #fbb040; /* Amarillo más claro */
+}
